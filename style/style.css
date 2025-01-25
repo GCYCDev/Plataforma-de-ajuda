@@ -36,3 +36,65 @@ nav > a:hover{
     background-color: gray;
     color: black;
 }
+
+main > div{
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.274), rgba(0, 0, 0, 0.877));
+    border: 1px solid black;
+    height: 250px;
+    width: 400px;
+    text-align: center;
+}
+
+main > div > h2{
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.726);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.726);
+}
+
+
+#alarme{
+    position: absolute;
+    left: 29%;
+    transform: translate(-50%, 4%);
+}
+
+#cftv{
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, 103%);
+}
+
+#cercEletrica{
+    position: absolute;
+    left: 29%;
+    transform: translate(-50%, 202%);
+}
+
+#interfonia{
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, 301%);
+}
+
+#contDeAcesso{
+    position: absolute;
+    left: 29%;
+    transform: translate(-50%, 400%);
+}
+
+#rast{
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, 499%);
+}
+
+#concertina{
+    position: absolute;
+    left: 29%;
+    transform: translate(-50%, 598%);
+}
+
+
+
+
+
