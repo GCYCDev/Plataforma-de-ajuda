@@ -10,7 +10,6 @@ body{
 }
 
 header{
-    width: 100%
     font-weight: bolder;
     background-image: linear-gradient(to bottom, gray, black);
     color: white;
@@ -132,51 +131,23 @@ main > div > h2{
     transform: translate(0%, 500%);
 }
 
-#rast{
+#rastreamento{
     background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.274), rgba(0, 0, 0, 0.877));
     position: absolute;
     left: 25%;
     transform: translate(400px, 500%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#contDeAcesso{
-    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.274), rgba(0, 0, 0, 0.877));
-    position: absolute;
-    left: 29%;
-    transform: translate(-50%, 400%);
-}
-
-#rast{
-    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.274), rgba(0, 0, 0, 0.877));
-    position: absolute;
-    left: 70%;
-    transform: translate(-50%, 500%);
-}
-
 #concertina{
     background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.274), rgba(0, 0, 0, 0.877));
     position: absolute;
-    left: 29%;
+    left: 35%;
     transform: translate(-50%, 600%);
 }
 
-
-
-
-
+#concertinaDados{
+    box-shadow: none;
+    position: absolute;
+    left: 35%;
+    transform: translate(200px, 600%);
+}
