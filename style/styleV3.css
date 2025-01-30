@@ -138,3 +138,21 @@ footer{
     bottom: -270px;
 
 }
+
+#alarme{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+}
+
+#alarme > h1{
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#alarme > p{
+    padding: 10px;
+    text-align: justify;
+    text-indent: 30px;
+}
