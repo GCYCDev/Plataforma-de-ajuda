@@ -35,7 +35,7 @@ nav{
     padding: 10px;
     width: 100%;
     position: fixed;
-    top: 250px;
+    top: 240px;
     z-index: 1000;
 }
 
@@ -71,7 +71,7 @@ body > main > h1{
 main{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.966), white);
     position: relative;
-    top: 238px;
+    top: 270px;
 }
 
 
@@ -131,6 +131,6 @@ footer{
     width: 100%;
     padding: 5px;
     position: relative;
-    bottom: -234px;
+    bottom: -270px;
 
 }
