@@ -48,11 +48,142 @@
                     <li>Saída de sirene</li>
                     <li>Entrada de sensores</li>
                     <li>Barramento para <abbr title="(Teclados / Receptores de dispositivos sem fio / Expansor de zonas / ETC..)"><strong>modulos de comunicação</strong></abbr></li>
-                    <li>Saida de energia para dispositivos</li>
+                    <li>Saida AUX</li>
                     <li>PGM - Relé de contato programavel</li>
                     <li>Sistema de comunicação por linha telefonica</li>
                 </ol>
             </aside>
+            <br>
+            <br>
+
+            <h3>Entrada Principal de Energia:</h3>
+
+            <p>Esta conexão pode variar entre fabricantes de central de alarme, podendo ser ligado: Fonte chaveada, Transformador ou Placa fonte. Em uma eventual troca, sempre deve-se observar modelos, conexões e tensão de trabalho para que não haja queima do equipamento.</p>
+
+            <h3>Entrada para Bateria:</h3>
+
+            <p>Esta conexão pode variar entre fabricantes de central de alarme, podendo ser com conector para chicote ou soldado diretamente na placa da central. Em uma eventual troca, sempre deve-se observar a polaridade da conexão com a polaridade da bateria pois, a inversão poderá ocasionar a queima do e equipamento e também gera risco de explosões.</p>
+
+            <h3>Saída de Sirene:</h3>
+
+            <p>A saída de sirene normalmente gera uma tensão de 12 Volts com corrente maxima de 1 Amper com Bateria, Devemos sempre observar o consumo do dispositivo de alerta que será ligado nesta saída pois, dispositivos com corrente superior ou a soma de varios dispositivos ligados justos, podem não funcionar corretamente. <br>Obs.: Se houver necessidade de fazer este tipo de ligação, podemos usar um <strong><a href="https://youtu.be/ZCdGnGDcq-4?si=AFyQ59gizko8LcBA" target="_blank" class="rele">RELÉ AUXILIAR</a></strong> para esta ligação.</p>
+
+            <h3>Entrada de Sensores:</h3>
+
+            <p>Entrada de sensores sempre deve ser conferido o manual de instruções do equipamento, pois o sistema de ligação é completamente diferente entre marcas e modelos. Existem centrais com duplicação de zona, outras não. Existem centrais com entrada programavel, outras não. Além do esquema de ligação, que podem ser:</p>
+
+            <h4>Simples, sem Resistor de Final de Linha:</h4>
+
+            <img src="alarme/img/002.jpg" alt="">
+
+            <p>Este modo de ligação padrão é o mais simples, porém o mais vulnerável à sabotagens, pois se o fio do sensor for colocado 
+                em curto-circuito, a central de alarme não irá reconhecer o problema. A seguir, um exemplo de ligação de um sensor na 
+                zona 1 da central (Z1).</p>
+
+            <h4>Simples, sem Resistor de Final de Linha e com Detecção de Tamper</h4>
+
+            <img src="alarme/img/003.jpg" alt="">
+
+            <p>Este modo de ligação traz mais segurança que o anterior, pois oferece detecção de abertura de tamper, contato 
+                Normalmente Fechado (NC), presente em alguns modelos de sensores infravermelho. Se houver tentativa de sabotagem 
+                da caixa do sensor, este contato se abrirá indicando que houve violação. Se a função Falhas (que geram disparos da sirene) 
+                estiver ativada, a sirene irá disparar mesmo se a central de alarme estiver desativada, consulte o tópico 6.24. Ativação/
+                 desativação de funções.
+                 Este modo de ligação vale para todas as zonas da central. Veja a seguir a forma de ligação para sensores que possuem 
+                tamper e para sensores que não possuem tamper. Exemplo de ligação de um sensor na zona 1 da central (Z1). 
+                Obs.: este modo de ligação não detecta curto-circuito da f iação. </p>
+
+            <h4>Simples, com Resistor de Final de Linha e Detecção de Curto-Circuito na fiação:</h4>
+
+            <img src="alarme/img/004.jpg" alt="">
+
+            <p>Este modo de ligação detecta se o fio do sensor foi colocado em curto-circuito. O resistor de 2K2 Ω deve ser instalado 
+                junto ao sensor e não diretamente no borne da zona da central, pois este não terá nenhuma utilidade e a segurança do 
+                sistema será comprometida. Neste modo de ligação não há detecção de tamper. A seguir, um exemplo de ligação de um 
+                sensor na zona 1 da central (Z1). </p>
+
+            <h4>Simples, com Resistor de Final de Linha, Detecção de Tamper e de Curto-Circuito na fiação:</h4>
+
+            <img src="alarme/img/005.jpg" alt="">
+
+            <p>É o modo de ligação mais completo para zonas Simples. O resistor de 2K2 Ω deve ser instalado junto ao sensor e 
+                não diretamente no borne da zona da central, pois este não terá nenhuma utilidade e a segurança do sistema será 
+                comprometida. Este modo de ligação vale para todas as zonas da central. Consulte a seguir, a forma de ligação para 
+                sensores que possuem tamper e para sensores que não possuem tamper, como por exemplo; sensores de abertura.</p>
+
+            <h4>Dupla, sem Resistor de Final de Linha:</h4>
+
+            <img src="alarme/img/006.jpg" alt="">
+
+            <p>Com a função Zona dupla habilitada, o sistema reconhece duas zonas por borne de entrada (as zonas do teclado só 
+                funcionam como Zona simples), neste caso, ficam 16 zonas com fio na central. Esta configuração é a menos segura para 
+                Zonas duplas, pois não reconhece curto-circuito da fiação. O sensor ligado no resistor de 2K2 Ω fica sendo a zona 1, o 
+                sensor ligado ao resistor de 3K9 Ω na zona 11.</p>
+            
+            <h4>Dupla, sem Resistor de Final de Linha e com Detecção de Tamper:</h4>
+            
+            <img src="alarme/img/007.jpg" alt="">
+
+            <p>Com a função Zona dupla habilitada, o sistema reconhece duas zonas por borne de entrada (as zonas do teclado só 
+                funcionam como Zona simples), neste caso, ficam 16 zonas com fio na central. Como o modo de ligação vale para todas 
+                as zonas; consulte a seguir a forma de ligação para sensores com tamper e para sensores sem tamper. O sensor ligado no 
+                resistor de 2K2 Ω fica sendo a zona 1, o sensor ligado ao resistor de 3K9 Ω a zona 11.</p>
+            
+            <h4>Dupla, com Resistor de Final de Linha, Detecção de Tamper e de Curto-Circuito da fiação:</h4>
+
+            <img src="alarme/img/008.jpg" alt="">
+
+            <p>Este é o modo mais completo. Detecta curto-circuito na fiação e abertura de tamper. O resistor de 2K2 Ω deve ser instalado 
+                junto ao sensor e não diretamente no borne da zona da central, pois este não terá nenhuma utilidade e a segurança do 
+                sistema será comprometida.
+                 É recomendado configurar a central para este modo, pois apesar de ser o mais complexo para realizar a ligação dos 
+                sensores, este é também o que oferece mais segurança para o sistema de alarme. Como o modo de ligação vale para todas 
+                as zonas, consulte a seguir os esquemas para ligação de sensores com tamper e de sensores sem tamper. O sensor ligado 
+                no resistor de 2K2 Ω fica sendo a zona 1, o sensor ligado ao resistor de 3K9 Ω a zona 11.</p>
+            
+            <h4>Duplicação em Paralelo com Detecção de Curto-Circuito da fiação:</h4>
+
+            <img src="alarme/img/009.jpg" alt="">
+
+            <p>Neste modo de ligação, os sensores são ligados em paralelo na entrada da zona, como se fossem duas entradas 
+                independentes e o resistor é ligado em série com o sensor. Este modo de ligação detecta se o fio do sensor foi colocado 
+                em curto-circuito, mas não possui detecção de tamper. Para maior segurança, sempre ligue o resistor junto do sensor e não 
+                diretamente no borne da zona da central, pois este não terá nenhuma utilidade. O sensor ligado no resistor de 2K2 Ω fica 
+                sendo a zona 1, o sensor ligado ao resistor de 3K9 Ω a zona 11.</p>
+
+            <h3>Barramento para Modulos de Comunicação:</h3>
+
+            <p>Conexão de barrameno é o ponto de entrada para Teclados, Receptores de Dispositivos sem Fio, Expansores de Zonas, entre outros. Obs: Normalmente, cada marca e modelo tem o seu próprio protocolo de comunicação, ou seja, dispositivos de barramento devem ser compativeis com o modelo de central usada, consulte o manual do produto.</p>
+
+            <h3>Saída de Energia (AUX):</h3>
+
+            <p>A saída de energia ou saída auxiliar, é o local onde todos os dispositivos da central são alimentados como: Sensores, Teclados, Receptores, etc.</p>
+
+            <h3>PGM - Relé de contato programável:</h3>
+
+            <p>As saídas programáveis PGM podem ser acionadas por diversos eventos, como ativação/desativação da central de alarme,
+            disparo, corte da linha telefônica, etc. Para conhecer todas as possibilidades, veja o item Atributos de zona. <br>
+            Esta saída funciona como um contato Normalmente Aberto (NO), e é acionada quando o evento programado ocorrer,
+            podendo trabalhar nos seguintes modos:</p>
+
+            <p>» <strong>Liga/Desliga:</strong> quando o evento ocorrer, a PGM será ligada e só será desligada quando o evento cessar. Por exemplo, a 
+            PGM é acionada quando ocorrer um disparo e só será desligada quando o disparo cessar.</p>
+
+            <p>» <strong>Pulsado:</strong> quando ocorrer o evento programado, a PGM ficará ligada por tempo programável de 1 a 8 segundos e depois 
+            será desligada, independentemente do evento ter cessado ou não.</p>
+
+            <p>» <strong>Pelo tempo de sirene:</strong> se a sirene estiver desligada, o funcionamento será igual ao modo Liga/Desliga. Se a sirene 
+            estiver ligada, a saída permanecerá ligada durante o disparo da sirene. Por exemplo, ao programar a saída PGM para ser 
+            acionada em caso de corte do fio da sirene, esta permanecerá ativada durante o tempo de sirene programado.</p>
+
+            <p>A saída PGM tem capacidade de fornecer no máximo 50 mA a 13 Vdc, sendo que o Negativo do equipamento que será 
+            acionado, deve ser ligado na saída PGM e o Positivo no (+) da saída auxiliar. Se for utilizar um equipamento que necessite 
+            de maior corrente ou tensão, é necessário o uso de um <strong><a href="https://youtu.be/ZCdGnGDcq-4?si=AFyQ59gizko8LcBA" target="_blank" class="rele">RELÉ AUXILIAR</a></strong>.</p>
+
+            <h3>Sistema de comunicação por Linha Telefonica</h3>
+
+            <p>O borne Linha é a entrada da linha telefônica, ligue nele os dois fios da linha telefônica pública. O borne Fone é a saída da 
+                linha telefônica, ligue nele os fios destinados aos aparelhos telefônicos instalados no local.</p>
         </article>
 
     </main>
