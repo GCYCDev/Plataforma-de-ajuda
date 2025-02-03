@@ -52,6 +52,10 @@ nav > a:hover{
     font-weight: bolder;
 }
 
+nav > #home, #manuais, #informacoes{
+    background-color: gray;
+}
+
 
  
 body{
@@ -185,6 +189,7 @@ aside{
 h3{
     padding: 10px;
     padding-left: 25px;
+    padding-top: 30px;
     text-align: left;
 }
 
@@ -192,4 +197,27 @@ h4{
     padding: 10px;
     padding-left: 15px;
     text-align: left;
+}
+
+.menuAlarme{
+    position: fixed;
+    bottom: 0px;
+}
+
+
+.menuAlarme > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+.menuAlarme > a:hover{
+    background-color: rgba(255, 255, 255, 0.301);
+    transition: 0.5s;
+}
+
+.menuAlarme > #centrais, #sensores, #integracao{
+    background-color: rgba(255, 255, 255, 0.301);
 }
