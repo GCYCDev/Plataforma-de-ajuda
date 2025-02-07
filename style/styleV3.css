@@ -215,3 +215,13 @@ h4{
 .menuAlarme > #centrais, #sensores, #integracao{
     background-color: rgba(0, 17, 255, 0.747);
 }
+
+/*-------------------Janela alarme-------------------------*/
+
+/*-------------------Janela sensores-------------------------*/
+
+
+.aguard{
+    margin: auto;
+    text-align: center;
+}
