@@ -221,7 +221,45 @@ h4{
 /*-------------------Janela sensores-------------------------*/
 
 
-.aguard{
-    margin: auto;
-    text-align: center;
+main{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+/*-------------------espera-------------------------*/
+
+.aguard{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    display: block;
+    border: 10px solid blue;
+    box-shadow: inset 0px -20px 20px 0px white;
+    border-top: 10px solid transparent;
+    border-radius: 100px;
+
+    animation: carregando 1s linear infinite;
+}
+
+.test{
+    position: absolute;
+    color: blue;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px white;
+}
+
+@keyframes carregando{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*-------------------espera-------------------------*/
